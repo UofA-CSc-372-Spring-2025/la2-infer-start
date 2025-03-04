@@ -38,3 +38,9 @@ infer(lambda(X, E), arrow(T1, T2), Env) :-
     fresh_type_var(T1),
     infer(E, T2, [(X, T1) | Env]).
 
+% --------------------------------------------------
+% Stubbed out applications so testing works.
+% You need to implement these and potentially others.
+infer(_,_,_) :- fail.
+
+lookup(_,_,_) :- fail.

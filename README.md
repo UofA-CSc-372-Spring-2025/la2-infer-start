@@ -16,7 +16,7 @@ Why does it fail?
 
 ### Explain a trace [4 points]
 
-Trace `infer(lambda(f, lambda(x, apply(sml_var(f), apply(sml_var(f), sml_var(x)))))`.
+Trace `infer(lambda(f, lambda(x, apply(sml_var(f), apply(sml_var(f), sml_var(x))))),T).`.
 At which point in the trace does the type of `f` go from being `T1 -> T2` to being `T -> T`?
 
 Explain why that happens.
